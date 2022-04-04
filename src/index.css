@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind utilities;
+/* @tailwind components; */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@media (hover: hover) {
+  .mouse-no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mouse-no-scrollbar {
+    scrollbar-width: none;
+  }
+}
+
+@media (hover: none) {
+  .touchscreen-hide {
+    display: none;
+  }
+}
